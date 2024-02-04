@@ -13,6 +13,13 @@
   }
 }
 
+.recent-event {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #1D1D1D;
+  color: #C9C9C9;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
