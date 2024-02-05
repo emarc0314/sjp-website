@@ -1,24 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Home from './pages/Home';
+import Event from './pages/Events';
+import Archives from './pages/Archives';
+import Contact from './pages/Contact';
+import Statements from './pages/Statements';
+
+import Navbar from './components/Navbar.js';
+
 function App() {
+  let component
+
+  switch (window.location.pathname) {
+    case "/":
+      component = <Home className="body" />
+      break
+    case "/events":
+      component = <Event className="body" />
+      break
+    case "/statements":
+      component = <Statements className="body" />
+      break
+    case "/contact":
+      component = <Contact className="body" />
+      break
+    case "/archives":
+      component = <Archives className="body" />
+      break
+  }
   return (
     <div className="App">
       <div className="recent-event">Join #KeffiyehThursday, get your keffiyeh from Palestine today! </div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          if you see this, it works -elvis
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="body">
+        {component}
+      </div>
     </div>
   );
 }
