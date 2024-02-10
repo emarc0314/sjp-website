@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Statements from './pages/Statements';
 
 import Navbar from './components/Navbar.js';
+import Footer from './components/Footer';
 
 function App() {
   let component
@@ -35,6 +36,7 @@ function App() {
       <div className="body">
         {component}
       </div>
+      <Footer />
     </div>
   );
 }
