@@ -10,7 +10,7 @@ export default function Footer() {
       <h1 className="title"> Students for Justice in Palestine at Cornell</h1>
       <h4> This organization is a registered student organization of Cornell University.</h4>
     </div>
-    <ul>
+    <ul className="media">
       <li>
         <a href="https://www.instagram.com/sjp.atcornell?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
           <img src={insta} className="socials" href="/"></img>
