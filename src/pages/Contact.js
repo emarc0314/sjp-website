@@ -1,5 +1,5 @@
-
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react'; // Import useRef
+import emailjs from 'emailjs-com';
 import '../styles/Contact.css'; 
 
 function ContactForm() {
@@ -8,6 +8,8 @@ function ContactForm() {
     email: '',
     message: '',
   });
+
+  const form = useRef(null); // Define form using useRef
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,8 +21,21 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-    alert('Form submitted. Check the console for data.');
+    
+    // Use EmailJS to send the form data
+    emailjs.sendForm('service_nirfux5', 'template_9f56h2i', form.current, 'RYZ56LrPNBCUNQLLj')
+      .then((result) => {
+          console.log(result.text);
+          alert('Message sent!');
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+          }); // Reset form data after submission
+      }, (error) => {
+          console.log(error.text);
+          alert('Failed to send the message, please try again.');
+      });
   };
 
   return (
@@ -28,13 +43,11 @@ function ContactForm() {
       <div className="infographic-container">
         <h1>Contact Us</h1>
         <p>Have questions? Want to learn more? Interested in getting involved? Contact us using the form below, by email, or through our social media!</p>
-        <p>Harvard College Palestine Solidarity Committee</p>
-        <p>59 Shepard St. Box #126</p>
-        <p>Cambridge, MA 02138</p>
-        <p>harvardpsc@gmail.com</p>
+        {/* <p>Students for Justice in Palestine</p> */}
+        <p>somesjp@email.com</p>
       </div>
       <div className="contact-form-container">
-        <form onSubmit={handleSubmit} className="beautiful-contact-form">
+        <form ref={form} onSubmit={handleSubmit} className="beautiful-contact-form">
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
