@@ -42,9 +42,14 @@ function ContactForm() {
     <div className="contact-page-container">
       <div className="infographic-container">
         <h1>Contact Us</h1>
-        <p>Have questions? Want to learn more? Interested in getting involved? Contact us using the form below, by email, or through our social media!</p>
+        <p>
+          We advocate for justice, demand accountability, and support self-determination.</p>
+
+        <p> Have questions or want to learn more? Interested in getting involved? Contact us 
+          using the form, by email, or through our social media!.</p>
+
         {/* <p>Students for Justice in Palestine</p> */}
-        <p>somesjp@email.com</p>
+        <p><a href="mailto:sjpcornell@gmail.com" style={{ color: '#e58174', textDecoration: 'none' }}>sjpcornell@gmail.com</a></p>
       </div>
       <div className="contact-form-container">
         <form ref={form} onSubmit={handleSubmit} className="beautiful-contact-form">
