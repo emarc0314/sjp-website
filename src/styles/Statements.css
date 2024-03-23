@@ -1,0 +1,66 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 100fr));
+    grid-gap: 20px;
+    overflow: auto;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* background-color: green; */
+  }
+
+  .statement-page {
+    align-items: center;
+    width: 70%;
+    /* background-color: blue; */
+}
+
+ .grid-item {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+  }
+
+
+/* CARD CONSTRAINTS */
+.statement-card {
+    /* background-color: red; */
+    width: 400px;
+    height: 600px;
+    text-align: left;
+}
+
+.card-image {
+    width: 100%;
+    height:auto;
+}
+
+
+.card-read-more-button {
+  color: #659EA1;
+  font-size: small;
+  transition: 0s background-color;
+}
+
+.card-read-more-button:hover {
+  color: #436466;
+  transition-delay: 1s;
+  cursor: pointer;
+}
+
+a {
+  color: #0060B6;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
