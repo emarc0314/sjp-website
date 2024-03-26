@@ -1,10 +1,64 @@
-.blank {
-  height: 400px
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-text {
+  width: 75%;
+  font-size: 1.3rem;
+  font-family: Garamond, serif;
+  display: flex;
+  align-self: center;
+}
+
+.button {
+  background-color: #e0a2a2;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #7dcc8d;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem
+}
+
+.collaborators {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.collaborators-subtext {
+  color: #3e7e3a;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.get-involved {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 30%
 }
 
 .header {
   text-align: center;
+}
 
+.image-container {
+  display: flex;
+  align-self: center;
 }
 
 .logo {
@@ -21,8 +75,86 @@
   margin-top: 20px;
 }
 
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0rem 0rem 2rem 3rem
+}
 
-.title {
+.rows {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.SJP {
+  font-size: 3rem;
+  font-family: Cambria, serif;
+}
+
+.text-box {
+  font-size: 1.3rem;
+  font-family: Garamond, serif;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+
+}
+
+
+.titles {
+  color: rgb(67, 67, 67);
+  font-size: 2.5rem;
+  font-family: Cambria, serif
+}
+
+.under-middle {
   display: flex;
   justify-content: center;
+  background-color: hsl(53, 40%, 88%)
+}
+
+@media (max-width: 768px) {
+
+  .buttons {
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 90vw;
+    justify-content: center;
+  }
+
+  .get-involved {
+    width: 100%
+  }
+
+  .image-container {
+    justify-items: center;
+    width: 90%
+  }
+
+  .logo {
+    width: 45%;
+    justify-items: center;
+    margin-top: 10px;
+  }
+
+  .middle {
+    flex-direction: column;
+    padding: 0px
+  }
+
+  .rows {
+    flex-direction: column;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  .SJP {
+    font-size: 1.8rem;
+    font-family: Cambria, serif;
+  }
 }

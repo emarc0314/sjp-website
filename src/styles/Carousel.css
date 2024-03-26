@@ -1,0 +1,89 @@
+.arrows {
+  height: 2.5rem
+}
+
+.button-arrow {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  height: 100%
+}
+
+.carousel {
+  overflow: visible;
+  width: 554px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 15px;
+}
+
+.carousel-bottom-bar {
+  display: flex;
+  height: 51px;
+  justify-content: space-between;
+  background-color: #e58174;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.indicators {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.indicators img {
+  width: 17px;
+  height: 17px;
+}
+
+.inner {
+  display: flex;
+  max-height: 303px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transition: transform 0.3s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+}
+
+.sqs-block.image-block {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+
+  }
+
+  .carousel-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-bottom-bar {
+    width: 100%;
+    height: 50%;
+
+  }
+
+  .inner {
+    overflow: visible;
+    width: 100%;
+    height: 50%;
+  }
+}

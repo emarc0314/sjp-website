@@ -1,0 +1,56 @@
+.calendar {
+  border: solid 1px #777;
+  width: 50rem;
+  height: 36rem;
+  margin: 3rem;
+  margin-left: 5.5rem;
+  overflow-y: auto;
+}
+
+.page {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.posters-container {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.posters {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+
+  .calendar {
+    display: none;
+    margin-left: 3rem
+  }
+
+  .page {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .posters-container {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
