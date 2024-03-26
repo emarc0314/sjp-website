@@ -94,6 +94,15 @@
   font-family: Cambria, serif;
 }
 
+.text-box {
+  font-size: 1.3rem;
+  font-family: Garamond, serif;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+
+}
+
 
 .titles {
   color: rgb(67, 67, 67);

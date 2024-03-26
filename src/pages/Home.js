@@ -24,7 +24,10 @@ export default function Home() {
       </div>
       <div className="about-us">
         <h1 className="titles"> About Us</h1>
-        <p className="about-us-text"> We are a committed collective of students deeply concerned with the ongoing humanitarian crisis and systematic oppression faced by the Palestinian people, which we recognize as a mass genocide. Our solemn mission is to shed light on the stark realities of this genocide, perpetrated through decades of occupation, apartheid policies, and violence against Palestinian communities. Through rigorous advocacy, education, and solidarity actions, we aim to confront the injustices inflicted upon Palestinians, demand accountability from perpetrators, and advocate for urgent international intervention to halt the genocide and ensure the realization of Palestinian rights to self-determination, justice, and freedom. Join us in our solemn commitment to bearing witness, amplifying Palestinian voices, and mobilizing for meaningful change in solidarity with the victims of this ongoing tragedy.</p>
+        <div className="text-box" >
+          <p className="about-us-text"> Cornell Students for Justice in Palestine is a registered student activism organization that advocates for freedom, justice, and equality in Palestine. Our focus is to promote an understanding of the Palestinian struggle on-campus through educational events that raise awareness and critical discussions of the Occupation of Palestine within the settler-colonial state of Israel. We host events such as teach-ins, rallies, and cultural events to develop an intersectional movement focused on the Palestinian struggle for self-determination. We are open to all students interested in learning about and supporting Palestinian human rights.</p>
+          <p className="about-us-text">Cornell SJP is also a member organization of the Ithaca-based Coalition for Mutual Liberation, a group of over 90 organizations that educate, empower, and organize the community to fight against imperialism, settler colonialism, and other forms of oppression. </p>
+        </div>
       </div>
     </div>
 
