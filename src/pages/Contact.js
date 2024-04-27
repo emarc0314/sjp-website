@@ -23,7 +23,7 @@ function ContactForm() {
     e.preventDefault();
     
     // Use EmailJS to send the form data
-    emailjs.sendForm('service_nirfux5', 'template_9f56h2i', form.current, 'RYZ56LrPNBCUNQLLj')
+    emailjs.sendForm('service_xd8jv4s', 'template_2eevhbo', form.current, 'X7PtcUML2rstUJPAd')
       .then((result) => {
           console.log(result.text);
           alert('Message sent!');
@@ -46,7 +46,7 @@ function ContactForm() {
           We advocate for justice, demand accountability, and support self-determination.</p>
 
         <p> Have questions or want to learn more? Interested in getting involved? Contact us 
-          using the form, by email, or through our social media!.</p>
+          using the form, by email, or through our social media!</p>
 
         {/* <p>Students for Justice in Palestine</p> */}
         <p><a href="mailto:sjpcornell@gmail.com" style={{ color: '#e58174', textDecoration: 'none' }}>sjpcornell@gmail.com</a></p>
