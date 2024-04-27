@@ -4,6 +4,10 @@ import React, { Component } from 'react'
 
 // export default function StatementCard() {
 
+
+// https://docs.google.com/spreadsheets/d/1VDvusxn9pGVGmO-gyOIVjMeZFGnH3YEhE5r-C_jQ8zw/edit?resourcekey#gid=1991449905
+
+
 class StatementCard extends Component {
 
     state = { clicked: false }
@@ -14,6 +18,10 @@ class StatementCard extends Component {
     //convert HREF from title from sheets into all lowercase??
     //lowercase, then replace each space with - and make it a HREF
     //to be given that tho i'm going to need to take in some props
+
+
+
+ 
 
     render(props) {
         return (
@@ -26,9 +34,8 @@ class StatementCard extends Component {
                 Fellow Amos Yadlin’s Spring 2022 Study Group, entitled “Israeli National Security in a Shifting Middle East: 
                 Historical and Strategic Perspectives for an Uncertain Future.”</div>
                 <br></br>
-
            
-                <CustomLink href="/statements/detail">READ MORE →</CustomLink>
+                <CustomLink href="/statements/details">READ MORE →</CustomLink>
             </div>
         );
     }
@@ -38,9 +45,9 @@ export default StatementCard
 
 function CustomLink({ href, children, ...props }) {  
     return (
-
+        //how to pass information from here to statementDetailpage
         <a href={href} {...props}>
-            <div className="card-read-more-button" href="/statements/detail">READ MORE →</div>
+            <div className="card-read-more-button" href="/statements/details">READ MORE →</div>
         </a>
     )
   }

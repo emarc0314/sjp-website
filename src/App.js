@@ -29,7 +29,7 @@ function App() {
     case "/archives":
       component = <Archives className="body" />
       break
-    case "/statements/detail":
+    case "/statements/details":
       component = <StatementDetailPage className="body"/>
   }
   return (

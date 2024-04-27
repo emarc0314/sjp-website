@@ -1,11 +1,12 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 100fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 10fr));
+    /* grid-gap: 0px; */
     overflow: auto;
     max-width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+
+    /* margin-left: 20px;
+    margin-right: 20px; */
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -19,6 +20,7 @@
 }
 
  .grid-item {
+    /* background-color: red; */
     display: flex;
     padding: 20px;
     align-items: center;
