@@ -7,7 +7,8 @@ import Contact from './pages/Contact';
 import Statements from './pages/Statements';
 
 import Navbar from './components/Navbar.js';
-import Footer from './components/Footer';
+import Footer from './components/Footer.js';
+import StatementDetailPage from './pages/StatementDetailPage.js';
 
 function App() {
   let component
@@ -28,6 +29,7 @@ function App() {
     // case "/archives":
     //   component = <Archives className="body" />
     //   break
+
   }
   return (
     <div className="App">
