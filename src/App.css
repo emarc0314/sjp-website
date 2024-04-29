@@ -1,4 +1,6 @@
-.body {
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+body {
   background-color: #FFFDED;
   display: flex;
   justify-content: center;
@@ -13,6 +15,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #1D1D1D;
+  font-family: Garamond, serif;
   color: #C9C9C9;
 }
 
@@ -25,4 +28,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@media (max-width: 768px) {
+  .recent-event {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recent-event {
+    font-size: 12px;
+  }
 }

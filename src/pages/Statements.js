@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../styles/Statements.css'
+
 import StatementCard from '../components/StatementCard';
 
 

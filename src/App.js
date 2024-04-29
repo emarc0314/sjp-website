@@ -2,7 +2,7 @@ import './App.css';
 
 import Home from './pages/Home';
 import Event from './pages/Events';
-import Archives from './pages/Archives';
+// import Archives from './pages/Archives';
 import Contact from './pages/Contact';
 import Statements from './pages/Statements';
 
@@ -26,11 +26,10 @@ function App() {
     case "/contact":
       component = <Contact className="body" />
       break
-    case "/archives":
-      component = <Archives className="body" />
-      break
-    case "/statements/details":
-      component = <StatementDetailPage className="body"/>
+    // case "/archives":
+    //   component = <Archives className="body" />
+    //   break
+
   }
   return (
     <div className="App">
