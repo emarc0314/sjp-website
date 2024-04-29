@@ -21,7 +21,6 @@ class Navbar extends Component {
           <CustomLink href="/events">EVENTS</CustomLink>
           <CustomLink href="/statements">STATEMENTS</CustomLink>
           <CustomLink href="/contact">CONTACT</CustomLink>
-          <CustomLink href="/archives">ARCHIVES</CustomLink>
         </ul>
       </div>
     </nav>

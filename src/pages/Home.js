@@ -8,6 +8,8 @@ import c1 from '../images/carousel1.JPG'
 import c2 from '../images/carousel2.JPG'
 import c3 from '../images/carousel3.JPG'
 
+import AGSA from '../images/ASA.png'
+
 export default function Home() {
   return <div className="home">
 
@@ -50,7 +52,7 @@ export default function Home() {
             <CollaboratorCard
               name="Students for Justice in Palestine"
               affiliation="Student Organization"
-              image={require("../images/logo.png")}
+              image={require("../images/ASA.png")}
             />
             <CollaboratorCard
               name="Students for Justice in Palestine"
