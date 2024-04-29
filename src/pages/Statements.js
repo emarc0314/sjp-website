@@ -87,7 +87,7 @@ class Statements extends Component {
           )}
         </div>
       </div>
-    );``
+    );
 
     //THIS is where we do componenet did mount stuff
   }
