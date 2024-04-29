@@ -9,9 +9,10 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked })
   }
 
-  render(props) {
+  render() {
     return <nav className="nav">
       <div className="menu-icon" onClick={this.handleClick}>
+        <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
 
       </div>
       <div className={this.state.clicked ? "nav-container active" : "nav-container"}>
@@ -20,7 +21,6 @@ class Navbar extends Component {
           <CustomLink href="/events">EVENTS</CustomLink>
           <CustomLink href="/statements">STATEMENTS</CustomLink>
           <CustomLink href="/contact">CONTACT</CustomLink>
-          <CustomLink href="/archives">ARCHIVES</CustomLink>
         </ul>
       </div>
     </nav>
