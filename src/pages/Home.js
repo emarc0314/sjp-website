@@ -8,8 +8,6 @@ import c1 from '../images/carousel1.JPG'
 import c2 from '../images/carousel2.JPG'
 import c3 from '../images/carousel3.JPG'
 
-import AGSA from '../images/ASA.png'
-
 export default function Home() {
   return <div className="home">
 
@@ -38,7 +36,7 @@ export default function Home() {
         <h1 className="titles" > Get Involved</h1>
         <div className="buttons">
           <a href="https://monkeytype.com/" className="button">Students</a>
-          <a href="https://newcp.net/" className="button">Press</a>
+          <a href="mailto:sjpcornell@gmail.com" className="button">Press</a>
         </div>
       </div>
     </div>
@@ -50,26 +48,26 @@ export default function Home() {
         <div cards>
           <div className="rows">
             <CollaboratorCard
-              name="Students for Justice in Palestine"
+              name="Arab Student Association"
               affiliation="Student Organization"
               image={require("../images/ASA.png")}
             />
             <CollaboratorCard
-              name="Students for Justice in Palestine"
+              name="Jewish Voice for Peace"
               affiliation="Student Organization"
-              image={require("../images/logo.png")}
+              image={require("../images/JVP.png")}
             />
           </div >
           <div className="rows">
             <CollaboratorCard
-              name="Students for Justice in Palestine"
+              name="Native American Indigenous Students at Cornell"
               affiliation="Student Organization"
-              image={require("../images/logo.png")}
+              image={require("../images/NAISAC.png")}
             />
             <CollaboratorCard
-              name="Students for Justice in Palestine"
+              name="Arab Graduate Student Association"
               affiliation="Student Organization"
-              image={require("../images/logo.png")}
+              image={require("../images/AGSA.png")}
             />
           </div >
         </div>

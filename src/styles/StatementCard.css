@@ -1,0 +1,54 @@
+.card-body {
+  margin: 1rem;
+  font-family: Garamond, serif;
+  font-size: 18px;
+}
+
+.card-date {
+  color: gray;
+  margin: 1rem;
+  font-family: Cambria, serif;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.card-read-more-button {
+  align-self: flex-end;
+  color: #8b0000;
+  font-size: small;
+  margin: 0.5rem;
+  transition: 0s background-color;
+}
+
+.card-read-more-button:hover {
+  color: #e58174;
+  transition-delay: 1s;
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+  font-family: Cambria, serif;
+}
+
+.statement-card {
+  margin: 1.5rem;
+  width: 40%
+}
+
+@media (max-width: 768px) {
+  .card-image {
+    width: 100%
+  }
+
+  .statement-card {
+    width: 90%;
+    padding-top: 20px;
+  }
+}

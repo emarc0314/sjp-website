@@ -1,46 +1,32 @@
 import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Event from './pages/Events';
-// import Archives from './pages/Archives';
 import Contact from './pages/Contact';
 import Statements from './pages/Statements';
-
-import Navbar from './components/Navbar.js';
-import Footer from './components/Footer.js';
-import StatementDetailPage from './pages/StatementDetailPage.js';
+import StatementDetailPage from './pages/StatementDetailPage';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
-  let component
-
-  switch (window.location.pathname) {
-    case "/":
-      component = <Home className="body" />
-      break
-    case "/events":
-      component = <Event className="body" />
-      break
-    case "/statements":
-      component = <Statements className="body" />
-      break
-    case "/contact":
-      component = <Contact className="body" />
-      break
-    // case "/archives":
-    //   component = <Archives className="body" />
-    //   break
-
-  }
   return (
     <div className="App">
-      <div className="recent-event">Join #KeffiyehThursday, get your keffiyeh from Palestine today! </div>
-      <Navbar />
-      <div className="body">
-        {component}
-      </div>
-      <Footer />
+      <Router>
+        <Navbar />
+        <div className="body">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/events" element={<Event />} />
+            <Route path="/statements" element={<Statements />} />
+            <Route path="/statements/:slug" element={<StatementDetailPage />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
     </div>
   );
 }
 
 export default App;
+

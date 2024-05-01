@@ -1,46 +1,35 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 10fr));
-    /* grid-gap: 0px; */
-    overflow: auto;
-    max-width: 100%;
-
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    /* background-color: green; */
-  }
-
-  .statement-page {
-    align-items: center;
-    width: 70%;
-    /* background-color: blue; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 10fr));
+  overflow: auto;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
- .grid-item {
-    /* background-color: red; */
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-    width: auto;
-    justify-content: center;
-  }
+.grid-item {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  justify-content: center;
+}
 
+.individual {
+  padding-left: 3rem
+}
+
+.statement-page {
+  align-items: center;
+  width: 100%;
+}
 
 /* CARD CONSTRAINTS */
-.statement-card {
-    /* background-color: red; */
-    width: 400px;
-    height: 600px;
-    text-align: left;
-}
-
 .card-image {
-    width: 100%;
-    height:auto;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -56,13 +45,49 @@
   cursor: pointer;
 }
 
+.statement-card {
+  width: 400px;
+  height: 600px;
+  text-align: left;
+}
+
+.statement-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 1rem
+}
+
 a {
   color: #0060B6;
   text-decoration: none;
 }
 
 a:hover {
-  color:#00A0C6; 
-  text-decoration:none; 
-  cursor:pointer;  
+  color: #00A0C6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+  }
+
+  .individual {
+    padding-left: 0px;
+    padding-right: 10px;
+    justify-content: center;
+  }
+
+  .statement-card {
+    text-align: left;
+    width: 100%
+  }
+
+  .statement-row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
