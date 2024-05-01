@@ -1,0 +1,25 @@
+.date {
+  font-family: Cambria, serif;
+  color: grey
+}
+
+.details-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.details-page h2 {
+  text-align: center;
+}
+
+.details-page p {
+  margin-bottom: 20px;
+  font-size: 19px;
+  font-family: Garamond, serif;
+}
+
+.title {
+  font-family: Cambria, serif;
+  font-size: 2rem;
+}
