@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'; // Import useRef
 import emailjs from 'emailjs-com';
-import '../styles/Contact.css'; 
+import '../styles/Contact.css';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -21,20 +21,20 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Use EmailJS to send the form data
     emailjs.sendForm('service_xd8jv4s', 'template_2eevhbo', form.current, 'X7PtcUML2rstUJPAd')
       .then((result) => {
-          console.log(result.text);
-          alert('Message sent!');
-          setFormData({
-            name: '',
-            email: '',
-            message: '',
-          }); // Reset form data after submission
+        console.log(result.text);
+        alert('Message sent!');
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        }); // Reset form data after submission
       }, (error) => {
-          console.log(error.text);
-          alert('Failed to send the message, please try again.');
+        console.log(error.text);
+        alert('Failed to send the message, please try again.');
       });
   };
 
@@ -45,7 +45,7 @@ function ContactForm() {
         <p>
           We advocate for justice, demand accountability, and support self-determination.</p>
 
-        <p> Have questions or want to learn more? Interested in getting involved? Contact us 
+        <p> Have questions or want to learn more? Interested in getting involved? Contact us
           using the form, by email, or through our social media!</p>
 
         {/* <p>Students for Justice in Palestine</p> */}
@@ -54,7 +54,7 @@ function ContactForm() {
       <div className="contact-form-container">
         <form ref={form} onSubmit={handleSubmit} className="beautiful-contact-form">
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="from_name">Name</label>
             <input
               type="text"
               id="name"
@@ -66,7 +66,7 @@ function ContactForm() {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="from_email">Email</label>
             <input
               type="email"
               id="email"

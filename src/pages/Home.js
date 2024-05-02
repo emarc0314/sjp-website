@@ -35,7 +35,7 @@ export default function Home() {
       <div className="get-involved">
         <h1 className="titles" > Get Involved</h1>
         <div className="buttons">
-          <a href="https://monkeytype.com/" className="button">Students</a>
+          <a className="button" href="https://www.instagram.com/sjp.atcornell?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Students</a>
           <a href="mailto:sjpcornell@gmail.com" className="button">Press</a>
         </div>
       </div>
